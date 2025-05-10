@@ -8,16 +8,16 @@
 
       <section>
         <div class="example-button-row">
-          <a mat-button routerLink="/home-component" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-          <a mat-button routerLink="/about-component" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
-          <a mat-button routerLink="/courses-component" routerLinkActive="active" ariaCurrentWhenActive="page">Courses</a>
+          <a mat-button routerLink="/home-component" routerLinkActive="active" ariaCurrentWhenActive="page">{{ 'header.home' | translate }}</a>
+          <a mat-button routerLink="/about-component" routerLinkActive="active" ariaCurrentWhenActive="page">{{ 'header.about' | translate }}</a>
+          <a mat-button routerLink="/courses-component" routerLinkActive="active" ariaCurrentWhenActive="page">{{ 'header.courses' | translate }}</a>
         </div>
       </section>
 
       <section>
         <mat-button-toggle-group [(ngModel)]="currentLanguage" aria-label="Font Style">
-          <mat-button-toggle value="en">EN</mat-button-toggle>
-          <mat-button-toggle value="es">ES</mat-button-toggle>
+          <mat-button-toggle value="en" (click)="setLanguage('en')" >EN</mat-button-toggle>
+          <mat-button-toggle value="es" (click)="setLanguage('es')" >ES</mat-button-toggle>
         </mat-button-toggle-group>
       </section>
 
@@ -39,9 +39,6 @@
 
         <router-outlet />
 
-        @for (content of fillerContent; track content) {
-          <p>{{content}}</p>
-        }
       </mat-sidenav-content>
     </mat-sidenav-container>
   </div>

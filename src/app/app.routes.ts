@@ -10,4 +10,5 @@ export const routes: Routes = [
   { path: 'home-component', component: HomeComponent },
   { path: 'about-component', component: AboutComponent },
   { path: 'courses-component', component: CoursesComponent },
+  { path: '',   redirectTo: '/home-component', pathMatch: 'full' },
 ];

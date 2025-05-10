@@ -1,0 +1,11 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "courses": "Cursos"
+  },
+  "body": {
+    "home": "Hola. Esto es informacióm para Inicio.",
+    "about": "Hola. Esto es información acerca de Nosotros."
+  }
+}

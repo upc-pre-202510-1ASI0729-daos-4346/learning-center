@@ -3,10 +3,14 @@ import {LayoutComponent} from './core/components/layout/layout.component';
 
 @Component({
   selector: 'app-root',
-  imports: [LayoutComponent],
+  imports: [LayoutComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'learning-center';
+
+  constructor() {
+  }
+
 }
